@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+#app, body {
+	background-color:#2a2a2a;
+	color: #f0f0f0;
+}
+
+#app {
+	float: left;
+	width: 50%;
+}
+
+.list_element {
+	width: 128px;
+	background-color: springgreen;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+}
+
+.char_icons {
+	width: 32px;
+	height: auto;
+	float: left;
+}
+
+.output_segment {
+	align-items: flex-end;
+	float: right;
+	width: 50%;
+}
+
+#outputImage {
+	width: 256px;
+	height: auto;
+	border: 10px groove #421f61;
+	background-color: #403b45;
+	align-content: center;
+}
+
+#outputLabel {
+	display: inline-block;
+	width: 256px;
+	text-align: center;
+}
