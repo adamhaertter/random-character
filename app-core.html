@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="random.css">
+	</head>
+	
+<!Vue Framework Import>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	
+<div id="app">
+	
+	<ol>
+		<button class="list_element" onClick="toggle(this)" v-for="char in characters">
+		  <input type="checkbox" v-bind:id="char_box" v-bind:name="char" checked="true" class="char_boxes" hidden>
+		  <img :name="char" :id="char_icon" class="char_icons">
+		  {{char}}
+		</button>
+	</ol>
+	<button id="generateBtn" onClick="generate()">Generate</button>
+</div>
+	
+<div class="output_segment">
+	<img id="outputImage" alt="empty output" hidden>
+	<br>
+	<label id="outputLabel" for="outputImage" hidden></label>
+	</div>
+	
+<script src="common.js"></script>
+	
+<script src="valorant.vue"></script>
+	
+</html>
