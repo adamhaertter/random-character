@@ -12,17 +12,22 @@
 }
 
 .list_element {
-	width: 128px;
-	background-color: springgreen;
+	width: 165px;
+	background-color: #39e6a6;
 	color: white;
 	text-align: center;
 	line-height: 32px;
+}
+
+.list_element:hover {
+	background-color: #34cf96;
 }
 
 .char_icons {
 	width: 32px;
 	height: auto;
 	float: left;
+	vertical-align: middle;
 }
 
 .output_segment {
