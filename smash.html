@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="random.css">
+	</head>
+	
+<!Vue Framework Import>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	
+<div id="app">
+	<!Character Segment>
+	
+	<div id="char_select">
+	<ol>
+		<button class="list_element" onClick="toggle(this)" v-for="char in characters" v-bind:name="char">
+		  <input type="checkbox" v-bind:id="char_box" v-bind:name="char" checked="true" class="char_boxes" hidden>
+		  <img :name="char" :id="char_icon" class="char_icons">
+		{{char}}
+		</button>
+	</ol>
+	<button id="generateBtn" onClick="generate('char')">Generate</button>
+	</div>
+	
+	<div class="output_segment">
+	<img id="oimg_char" class="output_image" alt="empty output" hidden>
+	<br>
+	<label id="olab_char" class="output_label" for="output_image" hidden></label>
+	</div>
+	
+	<!Weapon Segment>
+	
+	
+</div>
+	
+<script src="common.js"></script>
+	
+<script src="smash.vue"></script>
+	
+</html>
