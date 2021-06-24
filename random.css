@@ -29,11 +29,16 @@
 	background-color: #34cf96;
 }
 
-.char_icons {
+.char_icons, .weap_icons {
 	width: 32px;
 	height: auto;
 	float: left;
-	vertical-align: middle;
+	align-self: center;
+}
+
+.weap_icons {
+	width: 75px;
+	padding-top: 7px;
 }
 
 .output_segment {
@@ -45,10 +50,11 @@
 
 .output_image {
 	width: 256px;
-	height: auto;
+	height: 256px;
 	border: 10px groove #421f61;
 	background-color: #403b45;
 	align-content: center;
+	object-fit: contain;
 }
 
 .output_label {

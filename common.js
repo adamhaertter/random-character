@@ -13,12 +13,12 @@ function generate(suffix){
 		outLab.hidden = false;
 	}
 	
-function toggle(theDiv) {
-		var charName = theDiv.name;
+function toggle(theDiv, prefix) {
+		var name = theDiv.name;
 		try {
-		var divBox = document.querySelectorAll('input[class="char_boxes"][name="'+charName+'"]');
+		var divBox = document.querySelectorAll('input[class="'+prefix+'_boxes"][name="'+name+'"]');
 		} catch(e) {
-			console.log("Problem enountered while querying for "+charName);
+			console.log("Problem enountered while querying for "+name);
 		}
 		divBox = divBox.item(0);
 		if(divBox.checked == true) {
@@ -31,7 +31,7 @@ function toggle(theDiv) {
 	}
 
 window.onload = function loadIcons(){
-		var iconImages = document.querySelectorAll('img[class="char_icons"]');
+		var iconImages = document.querySelectorAll(".char_icons,.weap_icons");
 		
 		for(var i = 0; i < iconImages.length; i++){
 			iconImages.item(i).src = "img/icon/"+iconImages.item(i).name+".png";
