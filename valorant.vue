@@ -17,6 +17,30 @@ const app = new Vue({
 				'Skye',
 				'Yoru',
 				'Astra'
+			],
+			
+			weapons: [
+				'Classic',
+				'Shorty',
+				'Frenzy',
+				'Ghost',
+				'Sheriff',
+				
+				'Stinger',
+				'Spectre',
+				'Bucky',
+				'Judge',
+				
+				'Bulldog',
+				'Guardian',
+				'Phantom',
+				'Vandal',
+				
+				'Marshal',
+				'Operator',
+				'Ares',
+				'Odin',
+				'Knife'
 			]
 		}
 	})

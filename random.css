@@ -6,7 +6,13 @@
 	color: #f0f0f0;
 }
 
-#char_select {
+.category_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.data_select {
 	float: left;
 	width: 50%;
 }
@@ -31,6 +37,7 @@
 }
 
 .output_segment {
+	vertical-align: middle;
 	align-items: flex-end;
 	float: right;
 	width: 50%;
