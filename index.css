@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:#2a2a2a;
+	color: #f0f0f0;
+	align-items: center;
+}
+
+a {
+	display: inline-block;
+	color:#f0f0f0;
+	background-color:darkcyan;
+	padding: 3%;
+}
+
+.data_select {
+	width: 256px;
+	height: 256px;
+	display: inline-block;
+	text-align: center;
+}
+
+.data_logo {
+	align-content: center;
+	height: inherit;
+	width: auto;
+	filter:brightness(0);
+	padding-bottom: 5%;
+}
+
+.data_logo:hover {
+	filter:none;
+}
+
