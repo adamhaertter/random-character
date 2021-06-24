@@ -8,6 +8,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	
 <div id="app">
+	<!Character Segment>
+	
 	<div id="char_select">
 	<ol>
 		<button class="list_element" onClick="toggle(this)" v-for="char in characters" v-bind:name="char">
@@ -16,16 +18,19 @@
 		{{char}}
 		</button>
 	</ol>
-	<button id="generateBtn" onClick="generate()">Generate</button>
+	<button id="generateBtn" onClick="generate('char')">Generate</button>
 	</div>
 	
 	<div class="output_segment">
-	<img id="outputImage" alt="empty output" hidden>
+	<img id="oimg_char" class="output_image" alt="empty output" hidden>
 	<br>
-	<label id="outputLabel" for="outputImage" hidden></label>
+	<label id="olab_char" class="output_label" for="output_image" hidden></label>
 	</div>
-</div>
 	
+	<!Weapon Segment>
+	
+	
+</div>
 	
 <script src="common.js"></script>
 	

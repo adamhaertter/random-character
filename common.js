@@ -1,14 +1,16 @@
-function generate(){
-		var boxes = document.querySelectorAll('input[type="checkbox"][ class="char_boxes"]:checked');
+function generate(suffix){
+		var boxes = document.querySelectorAll('input[type="checkbox"][ class="'+suffix+'_boxes"]:checked');
 		var randomIndex = Math.floor(Math.random()*boxes.length);
 		var selectedName = boxes.item(randomIndex).name
 		
-		document.getElementById('outputImage').alt=selectedName;
-		document.getElementById('outputImage').src="img/portrait/"+selectedName+".png";
-		document.getElementById('outputImage').hidden=false;
+		var outImg = document.getElementById('oimg_'+suffix);
+		outImg.alt=selectedName;
+		outImg.src="img/portrait/"+selectedName+".png";
+		outImg.hidden=false;
 		
-		document.getElementById('outputLabel').innerHTML = selectedName;
-		document.getElementById('outputLabel').hidden = false;
+		var outLab = document.getElementById('olab_'+suffix);
+		outLab.innerHTML = selectedName;
+		outLab.hidden = false;
 	}
 	
 function toggle(theDiv) {
@@ -28,7 +30,6 @@ function toggle(theDiv) {
 		}
 	}
 
-		
 window.onload = function loadIcons(){
 		var iconImages = document.querySelectorAll('img[class="char_icons"]');
 		

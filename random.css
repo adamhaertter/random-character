@@ -36,7 +36,7 @@
 	width: 50%;
 }
 
-#outputImage {
+.output_image {
 	width: 256px;
 	height: auto;
 	border: 10px groove #421f61;
@@ -44,7 +44,7 @@
 	align-content: center;
 }
 
-#outputLabel {
+.output_label {
 	display: inline-block;
 	width: 256px;
 	text-align: center;
