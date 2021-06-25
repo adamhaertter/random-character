@@ -6,6 +6,10 @@
 	color: #f0f0f0;
 }
 
+h1, h2 {
+	font-family: Roboto, Arial, sans-serif;
+}
+
 .category_wrapper {
 	display: flex;
 	justify-content: center;
@@ -30,15 +34,10 @@
 }
 
 .char_icons, .weap_icons {
-	width: 32px;
-	height: auto;
+	height: 32px;
+	width: auto;
 	float: left;
 	align-self: center;
-}
-
-.weap_icons {
-	width: 75px;
-	padding-top: 7px;
 }
 
 .output_segment {
