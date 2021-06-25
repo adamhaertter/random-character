@@ -18,7 +18,7 @@ h1, h2 {
 
 .data_select {
 	float: left;
-	width: 50%;
+	width: 66%;
 }
 
 .list_element {
@@ -44,7 +44,7 @@ h1, h2 {
 	vertical-align: middle;
 	align-items: flex-end;
 	float: right;
-	width: 50%;
+	width: 33%;
 }
 
 .output_image {
