@@ -16,7 +16,8 @@ const app = new Vue({
 				'Breach',
 				'Skye',
 				'Yoru',
-				'Astra'
+				'Astra',
+				'KAY-O'
 			],
 			
 			weapons: [
