@@ -10,7 +10,18 @@ h1, h2 {
 	font-family: Roboto, Arial, sans-serif;
 }
 
-.category_wrapper {
+a, a:visited {
+	color: lightgray;
+	text-decoration: none;
+	padding: 3%;
+}
+
+a:hover {
+	color: lightslategray;
+	text-decoration: underline;
+}
+
+footer, .category_wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;

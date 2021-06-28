@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:#2a2a2a;
+	color: #f0f0f0;
+	align-items: center;
+}
+
+h1, h2, a, p {
+	font-family: Roboto, Arial, sans-serif;
+}
+
+a, p {
+	font-size: 11pt;
+}
+
+a, a:visited {
+	color: lightslategray;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkslategray;
+	text-decoration: underline;
+}
+
+tt {
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #404040;
+}
+
+.img-para {
+	display: table;
+}
+
+img, p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+img {
+	width: 75px;
+	height: auto;
+	padding-right: 10px;
+}
+
+#github {
+	filter: invert();
+}
