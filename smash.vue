@@ -97,7 +97,8 @@ const app = new Vue({
 				'Sephiroth',
 				'Pyra & Mythra',
 				'Pyra',
-				'Mythra'
+				'Mythra',
+				'Kazuya'
 			]
 		}
 	})
