@@ -40,8 +40,12 @@ footer, .category_wrapper {
 	line-height: 32px;
 }
 
+.weap_element {
+	background-color: coral;
+}
+
 .list_element:hover {
-	background-color: #34cf96;
+	filter: brightness(85%);
 }
 
 .char_icons, .weap_icons {

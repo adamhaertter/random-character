@@ -35,7 +35,7 @@
 	<div class="category_wrapper">
 	<div class="data_select">
 	<ol>
-		<button class="list_element" onClick="toggle(this, 'weap')" v-for="weap in weapons" v-bind:name="weap">
+		<button class="list_element weap_element" onClick="toggle(this, 'weap')" v-for="weap in weapons" v-bind:name="weap">
 		  <input type="checkbox" v-bind:id="weap_box" v-bind:name="weap" checked="true" class="weap_boxes" hidden>
 		  <img :name="weap" :id="weap_icon" class="weap_icons">
 		{{weap}}

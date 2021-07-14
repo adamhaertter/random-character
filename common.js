@@ -22,10 +22,16 @@ function toggle(theDiv, prefix) {
 		}
 		divBox = divBox.item(0);
 		if(divBox.checked == true) {
+			// Turn the box gray, now disabled
 			theDiv.style.backgroundColor = "#ACACAC";
 			divBox.checked = false;
 		} else {
-			theDiv.style.backgroundColor = "#39e6a6";
+			// Reset the box to its original color
+			if(theDiv.classList[1] == 'weap_element') {
+				theDiv.style.backgroundColor = 'coral';
+			} else {
+				theDiv.style.backgroundColor = "#39e6a6";	
+			}
 			divBox.checked = true;
 		}
 	}
