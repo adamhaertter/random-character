@@ -44,15 +44,23 @@ footer, .category_wrapper {
 	background-color: coral;
 }
 
+.map_element {
+	background-color: skyblue;
+}
+
 .list_element:hover {
 	filter: brightness(85%);
 }
 
-.char_icons, .weap_icons {
+.char_icons, .weap_icons, .map_icons {
 	height: 32px;
 	width: auto;
 	float: left;
 	align-self: center;
+}
+
+.map_icons {
+	outline: 2px inset;
 }
 
 .output_segment {
@@ -69,6 +77,10 @@ footer, .category_wrapper {
 	background-color: #403b45;
 	align-content: center;
 	object-fit: contain;
+}
+
+#oimg_map {
+	height: auto;
 }
 
 .output_label {

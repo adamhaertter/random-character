@@ -27,8 +27,10 @@ function toggle(theDiv, prefix) {
 			divBox.checked = false;
 		} else {
 			// Reset the box to its original color
-			if(theDiv.classList[1] == 'weap_element') {
-				theDiv.style.backgroundColor = 'coral';
+			if(prefix == 'weap') {
+				theDiv.style.backgroundColor = "coral";
+			} else if(prefix == 'map'){
+				theDiv.style.backgroundColor = "skyblue";
 			} else {
 				theDiv.style.backgroundColor = "#39e6a6";	
 			}
@@ -37,7 +39,7 @@ function toggle(theDiv, prefix) {
 	}
 
 window.onload = function loadIcons(){
-		var iconImages = document.querySelectorAll(".char_icons,.weap_icons");
+		var iconImages = document.querySelectorAll(".char_icons,.weap_icons,.map_icons");
 		
 		for(var i = 0; i < iconImages.length; i++){
 			iconImages.item(i).src = "img/icon/"+iconImages.item(i).name+".png";

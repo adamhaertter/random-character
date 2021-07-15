@@ -42,6 +42,15 @@ const app = new Vue({
 				'Ares',
 				'Odin',
 				'Knife'
+			],
+			
+			maps: [
+				'Split',
+				'Bind',
+				'Haven',
+				'Ascent',
+				'Icebox',
+				'Breeze'
 			]
 		}
 	})
