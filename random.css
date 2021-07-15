@@ -60,6 +60,7 @@ footer, .category_wrapper {
 }
 
 .map_icons {
+	height: 31px;
 	outline: 2px inset;
 }
 
