@@ -30,7 +30,7 @@ function toggle(theDiv, prefix) {
 			if(prefix == 'weap') {
 				theDiv.style.backgroundColor = "coral";
 			} else if(prefix == 'map'){
-				theDiv.style.backgroundColor = "skyblue";
+				theDiv.style.backgroundColor = "cornflowerblue";
 			} else {
 				theDiv.style.backgroundColor = "#39e6a6";	
 			}
