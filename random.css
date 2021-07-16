@@ -34,7 +34,7 @@ footer, .category_wrapper {
 
 .list_element {
 	width: 165px;
-	background-color: #39e6a6;
+	background-color: mediumaquamarine;
 	color: white;
 	text-align: center;
 	line-height: 32px;
@@ -80,8 +80,17 @@ footer, .category_wrapper {
 	object-fit: contain;
 }
 
+#oimg_char {
+	border-color: darkslategray;
+}
+
+#oimg_weap {
+	border-color: saddlebrown;
+}
+
 #oimg_map {
 	height: auto;
+	border-color: midnightblue;
 }
 
 .output_label {

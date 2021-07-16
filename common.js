@@ -32,7 +32,7 @@ function toggle(theDiv, prefix) {
 			} else if(prefix == 'map'){
 				theDiv.style.backgroundColor = "cornflowerblue";
 			} else {
-				theDiv.style.backgroundColor = "#39e6a6";	
+				theDiv.style.backgroundColor = "mediumaquamarine";	
 			}
 			divBox.checked = true;
 		}
