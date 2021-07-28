@@ -48,7 +48,7 @@ footer, .category_wrapper {
 	background-color: cornflowerblue;
 }
 
-.list_element:hover {
+.list_element:hover, .preset:hover {
 	filter: brightness(85%);
 }
 
@@ -97,4 +97,16 @@ footer, .category_wrapper {
 	display: inline-block;
 	width: 256px;
 	text-align: center;
+}
+
+.preset {
+	text-align: center;
+	width: 70px;
+	height: 64px;
+	background-color: lightslategray;
+	color: white;
+}
+
+.preset_ico {
+	height: 40px;
 }

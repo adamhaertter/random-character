@@ -38,6 +38,23 @@ function toggle(theDiv, prefix) {
 		}
 	}
 
+function toggleSet(setName) {
+	// Query for all the buttons
+	var listElements = document.querySelectorAll('button[class="list_element"]');
+	
+	for(var i = 0; i < listElements.length; i++){
+		//Grab the hidden checkbox of each character
+		var checkbox = document.querySelector('input[type=checkbox][class=char_boxes][name="'+listElements[i].name+'"]');
+		
+		//Should it be on or off according to the const list?
+		if(setName.includes(listElements[i].name) && checkbox.checked == false) {
+			toggle(listElements[i], 'char');
+		} else if (setName.includes(listElements[i].name)==false && checkbox.checked == true) {
+			toggle(listElements[i], 'char');
+		}
+	}
+}
+
 window.onload = function loadIcons(){
 		var iconImages = document.querySelectorAll(".char_icons,.weap_icons,.map_icons");
 		

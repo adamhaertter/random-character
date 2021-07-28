@@ -10,9 +10,9 @@
 	
 <div id="app">
 	<!Character Segment>
-	<h2>Characters</h2>
 	<div class="category_wrapper">
 	<div class="data_select">
+	<h2>Characters</h2>
 	<ol>
 		<button class="list_element" onClick="toggle(this, 'char')" v-for="char in characters" v-bind:name="char">
 		  <input type="checkbox" v-bind:id="char_box" v-bind:name="char" checked="true" class="char_boxes" hidden>
@@ -29,6 +29,36 @@
 	<label id="olab_char" class="output_label" for="output_image" hidden></label>
 	</div>
 	</div>
+	
+	<div class="preset_segment">
+	<h3>Preset Toggles</h3>
+		I'm playing... <br>
+		<button class="preset" onClick="toggleSet(classic)">
+			<img src="https://ssb.wiki.gallery/images/1/1e/SSB64_Icon.png" class="preset_ico">
+			<br>
+			64
+		</button>
+		<button class="preset" onClick="toggleSet(melee)">
+			<img src="https://ssb.wiki.gallery/images/e/ea/SSBM_Icon.png" class="preset_ico">
+			<br>
+			Melee
+		</button>
+		<button class="preset" onClick="toggleSet(brawl)">
+			<img src="https://ssb.wiki.gallery/images/7/7c/SSBB_Icon.png" class="preset_ico">
+			<br>
+			Brawl
+		</button>
+		<button class="preset" onClick="toggleSet(four)">
+			<img src="https://ssb.wiki.gallery/images/5/52/SSB4_Icon.png" class="preset_ico">
+			<br>
+			Smash 4
+		</button>
+		<button class="preset" onClick="toggleSet(ultimate)">
+			<img src="https://ssb.wiki.gallery/images/9/9b/SSBU_Icon.png" class="preset_ico">
+			<br>
+			Ultimate
+		</button>
+		</div>
 		
 </div>
 	
