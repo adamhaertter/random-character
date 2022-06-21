@@ -17,7 +17,10 @@ const app = new Vue({
 				'Skye',
 				'Yoru',
 				'Astra',
-				'KAY-O'
+				'KAY-O',
+				'Chamber',
+				'Neon',
+				'Fade'
 			],
 			
 			weapons: [
@@ -50,7 +53,9 @@ const app = new Vue({
 				'Haven',
 				'Ascent',
 				'Icebox',
-				'Breeze'
+				'Breeze',
+				'Fracture',
+				'Pearl'
 			]
 		}
 	})
