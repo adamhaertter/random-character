@@ -29,7 +29,27 @@
 	<label id="olab_char" class="output_label" for="output_image" hidden></label>
 	</div>
 	</div>
-  
+		
+	<!Map Segment>
+  <h2>Maps</h2>
+	<div class="category_wrapper">
+	<div class="data_select">
+	<ol>
+		<button class="list_element map_element" onClick="toggle(this, 'map')" v-for="map in maps" v-bind:name="map">
+		  <input type="checkbox" v-bind:id="map_box" v-bind:name="map" checked="true" class="map_boxes" hidden>
+		  <img :name="map" :id="map_icon" class="map_icons">
+		{{map}}
+		</button>
+	</ol>
+	<button onClick="generate('map')">Generate Map</button>
+	</div>
+	
+	<div class="output_segment">
+	<img id="oimg_map" class="output_image" alt="empty output" hidden>
+	<br>
+	<label id="olab_map" class="output_label" for="output_image" hidden></label>
+	</div>
+	</div>
 </div>
 
 <footer>
