@@ -46,6 +46,7 @@ footer, .category_wrapper {
 
 .map_element {
 	background-color: cornflowerblue;
+	width: 330px; /* Double the width to account for generally longer names*/
 }
 
 .list_element:hover, .preset:hover {
@@ -57,11 +58,6 @@ footer, .category_wrapper {
 	width: auto;
 	float: left;
 	align-self: center;
-}
-
-.map_icons {
-	height: 31px;
-	outline: 2px inset;
 }
 
 .output_segment {
